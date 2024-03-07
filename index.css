@@ -1,0 +1,158 @@
+body{
+    background-color: gray;
+}
+.part1 {
+    width: 60px;
+    background-color: chartreuse;
+    height: 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 40px;
+    margin-left: 15px;
+    border: 1px solid black;
+    border-bottom: none;
+    position: relative;
+
+}
+
+.part2 {
+    width: 120px;
+    background-color: black;
+    height: 40px;
+    border-radius: 5px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 10px;
+    position: relative;
+}
+
+.stop-lights {
+    width: 8px;
+    height: 15px;
+    background-color: brown;
+    position: absolute;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.lights {
+    width: 10px;
+    height: 20px;
+    background-color: rgb(251, 251, 248);
+    position: absolute;
+    right: 12px;
+    border-radius: 50%;
+    transform: rotate(-60deg);
+}
+
+.turnOnStopLights {
+    background-color: red;
+}
+
+.turnOnLights {
+    background-color: rgb(238, 238, 65);
+
+}
+
+.part3 {
+    width: 25px;
+    height: 25px;
+    background-color: brown;
+    border-radius: 50%;
+    margin: 0 5px;
+    margin-top: -15px;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.wheels {
+    display: flex;
+    justify-content: space-between
+}
+
+.wheel {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    z-index: 2;
+}
+
+.pole {
+    width: 5px;
+    height: 14px;
+    background-color: brown;
+    position: absolute;
+    bottom: -3px;
+    right: 5px;
+    transform: rotate(-45deg);
+    z-index: 0;
+}
+
+#gameBoard {
+    position: relative;
+    width: 100%;
+    height: 77px;
+}
+
+#car {
+    position: absolute;
+    width: 120px;
+    overflow: hidden;
+}
+
+#actions {
+    margin-top: 10%;
+}
+
+.street {
+    border-bottom: 2px solid rgb(206, 193, 193);
+}
+
+#backward {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(179, 9, 9);
+    font-size: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid black
+}
+
+#backward:hover {
+    background-color: rgb(240, 27, 27);
+}
+
+#forward {
+    width: 50px;
+    height: 40px;
+    background-color: rgb(179, 9, 9);
+    font-size: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid black
+}
+
+#forward:hover {
+    background-color: rgb(240, 27, 27);
+}
+
+.engineState {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(15, 123, 7);
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: rgb(225, 255, 0);
+}
+.engine-started{
+    background-color: rgb(240, 27, 27);
+    color: black
+}
+
+#engineState:hover {
+    background-color: rgb(38, 237, 45);
+}
